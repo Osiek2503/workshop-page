@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: Hind, serif;
+  background-color: #ababab;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#rectangle {
+  background-image: url("./img/Banner-1920x600px-Desktop-McLaren-MP4-22.jpg");
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  height: 500px;
+  font-weight: 700;
+  background-position-y: -50px;
+  font-size: 72px;
+  font-family: Gruppo;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+#rectangle:hover {
+  opacity: 0.7;
+}
+
+#logo {
+  float: left;
+  margin-left: 50px;
+}
+
+#zegar {
+  float: left;
+  margin-right: 50px;
+}
+
+.menu {
+  background-color: #1f2232;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0.5rem;
+  margin: 0 1rem;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  width: 160px;
+  text-align: center;
+  position: absolute;
+  background-color: rgb(35, 26, 95);
+  padding: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.dropdown ul li {
+  padding: 6px;
+}
+
+.dropdown ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li:hover {
+  background-color: #0d1121;
+  border-radius: 7px;
+}
+
+.dropdown a:focus + ul,
+.dropdown a:hover + ul,
+.dropdown ul:hover {
+  display: block;
+}
+
+.box {
+  width: 100%;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#login {
+  margin: 30px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+input {
+  padding: 5px;
+  margin: 4px;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.komentarz {
+  margin-top: 15px;
+}
+
+#komentarz {
+  resize: none;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 7px;
+}
+
+#submit {
+  cursor: pointer;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 7px;
+  box-shadow: 19px 10px 34px -12px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 245, 245, 1) 47%,
+    rgba(209, 209, 209, 1) 64%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1', GradientType=0 );
+}
+
+.fb {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  padding: 5px;
+  float: left;
+  background-color: #4668b3;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.tw {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  padding: 5px;
+  float: left;
+  background-color: #3095d3;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.content {
+  width: 100%;
+  text-align: justify;
+  padding: 20px;
+  border-left: 3px dotted #1f2232;
+  border-right: 3px dotted #1f2232;
+  margin-bottom: 30px;
+}
+
+.content2 {
+  width: 100%;
+  text-align: justify;
+  border-top: 3px dotted #1f2232;
+  clear: both;
+}
+
+.content2 ul {
+  padding: 0;
+  font-size: 25px;
+  list-style: none;
+}
+
+.content2 li {
+  width: 800px;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+  background-color: #5f7787;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content2 ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.content2 ul a:hover {
+  color: white;
+}
+
+.content1 {
+  width: 100%;
+  text-align: center;
+  border-top: 3px dotted #1f2232;
+  clear: both;
+}
+
+.content1 ul {
+  padding-left: 0;
+  margin-top: 50px;
+  border-top: 3px dotted #1f2232;
+  border-bottom: 3px dotted #1f2232;
+}
+
+.content1 li {
+  list-style: none;
+  line-height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.east {
+  width: 300px;
+  padding: 20px;
+  margin: 30px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 3px;
+}
+
+.scrollUp {
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  background: url("./img/up.png") no-repeat 0px 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}

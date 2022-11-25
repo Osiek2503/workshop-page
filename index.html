@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warsztat OG Turbo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Hind:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script src="jquery.scrollTo.min"></script>
+
+    <script>
+      jQuery(function ($) {
+        //zresetuj scrolla
+        $.scrollTo(0);
+        $("link1").click(function () {
+          $.scrollTo($("index.html"), 500);
+        });
+        $(".scrollUp").click(function () {
+          $.scrollTo($("body"), 500);
+        });
+        $("link2").click(function () {
+          $.scrollTo($("#oferta"), 500);
+        });
+        $("link3").click(function () {
+          $.scrollTo($("#kontakt"), 500);
+        });
+      });
+    </script>
+
+    <script src="timer.js"></script>
+  </head>
+
+  <body onload="odliczanie();">
+    <div class="container">
+      <a href="#" class="scrollUp"></a>
+
+      <div id="rectangle">
+        <div id="logo"><span style="color: red">OG</span> Turbo</div>
+
+        <div id="zegar">12:00:00</div>
+      </div>
+      <nav class="menu">
+        <div class="dropdown"><a id="link1" href="index.html">O nas</a></div>
+        <div class="dropdown">
+          <a>Cennik usług</a>
+          <ul>
+            <li><a href="#">Karoseria</a></li>
+            <li><a href="#">Silnik</a></li>
+            <li><a href="#">Zawieszenie</a></li>
+            <li><a href="#">Elektronika </a></li>
+            <li>
+              <a href="https://www.rk.com.pl" target="_blank"
+                >Sklep z częściami</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown"><a id="link2" href="#oferta">Oferta</a></div>
+        <div class="dropdown">
+          <a
+            href="https://www.google.pl/maps/place/Dakar+Autoserwis/@51.2655394,22.5685605,14z/data=!4m9!1m2!2m1!1swarsztat+samochodowy+lublin!3m5!1s0x4722575280ffdaa1:0xe39249c7cb4a70c!8m2!3d51.2720481!4d22.5716472!15sCht3YXJzenRhdCBzYW1vY2hvZG93eSBsdWJsaW5aHSIbd2Fyc3p0YXQgc2Ftb2Nob2Rvd3kgbHVibGlukgEKY2FyX3JlcGFpcpoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VObGJITklSamwzUlJBQuABAA"
+            target="_blank"
+            >Jak dojechać</a
+          >
+        </div>
+        <div class="dropdown"><a id="link3" href="#kontakt">Kontakt</a></div>
+      </nav>
+
+      <div class="box">
+        <form id="login">
+          <label>Podziel się swoją opinią</label>
+          <div>
+            <input
+              type="text"
+              id="nickname"
+              name="nickname"
+              placeholder="Twój nick"
+            />
+          </div>
+
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Twój e-mail"
+            />
+          </div>
+
+          <div class="komentarz">
+            <label for="komentarz">Treść:</label>
+          </div>
+          <div>
+            <textarea
+              rows="10"
+              cols="24"
+              id="komentarz"
+              name="komentarz"
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" id="submit" value="Zamieść komentarz" /><br />
+            Lub skontaktuj się z nami:
+          </div>
+
+          <div class="fb">
+            <a
+              href="https://www.facebook.com/SalonUslugMotoryzacyjnychLimuzynaSlawomirPodolak"
+              target="_blank"
+              ><i class="icon-facebook-squared"></i
+            ></a>
+          </div>
+          <div class="tw">
+            <a href="https://mobile.twitter.com/darstanwarsztat" target="_blank"
+              ><i class="icon-twitter-squared"></i
+            ></a>
+          </div>
+          <div style="clear: both"></div>
+        </form>
+
+        <div class="content">
+          <span id="bigtitle"><h1>O nas</h1></span>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+              nulla elit. Sed erat metus, egestas sit amet pellentesque nec,
+              porta ac eros. Interdum et malesuada fames ac ante ipsum primis in
+              faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia curae; Nulla eu urna at leo convallis
+              pharetra vitae a lacus. In molestie nisi quis pellentesque
+              feugiat. Nulla a ex et ipsum hendrerit ornare. Nunc vitae
+              facilisis dolor. Integer tristique velit ornare, semper orci ut,
+              laoreet diam. Nulla feugiat ante et sapien placerat posuere.
+            </p>
+            <p>
+              Aliquam suscipit risus sed felis facilisis, vel malesuada est
+              blandit. Morbi condimentum massa vel consequat porttitor. Duis at
+              felis ipsum. Suspendisse suscipit dignissim egestas. Nulla
+              tincidunt tortor sit amet scelerisque aliquam. Nulla quis lectus a
+              lectus congue sagittis. Nulla facilisi. Sed porta mauris id
+              consequat feugiat. Praesent sollicitudin, nisl a dapibus iaculis,
+              enim est semper mi, ac lacinia magna turpis non neque. Praesent
+              dapibus nibh ac suscipit volutpat. Vivamus neque massa, suscipit
+              et finibus id, vulputate sit amet diam. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae;
+              Fusce luctus orci id sapien euismod, at pharetra sapien viverra.
+              Nulla eget turpis nulla.
+            </p>
+            <p>
+              Nullam eget justo ac augue luctus pellentesque. Donec blandit ut
+              felis rutrum cursus. Sed egestas elit non orci eleifend, ut
+              scelerisque nisi mattis. In leo magna, laoreet nec arcu sed,
+              ultrices luctus risus. Nam maximus hendrerit tortor sed ultricies.
+              Suspendisse et sapien nec augue eleifend tempus vehicula sed
+              velit. Donec arcu sapien, mollis nec iaculis ut, rutrum in ante.
+              Suspendisse id blandit sem. Nullam tempus consequat ipsum quis
+              pulvinar. Vivamus pharetra nunc consectetur risus pretium rhoncus.
+              Nullam lacinia quam a vehicula maximus. Duis suscipit molestie
+              posuere. Integer vitae turpis ex. In et laoreet augue. Donec
+              turpis mi, scelerisque a consectetur sit amet, commodo cursus
+              lectus. Aenean eros łorci, auctor et massa eget, ornare ultrices
+              est.
+            </p>
+          </article>
+
+          <div class="content2">
+            <span
+              ><h1 id="oferta">
+                Oferta naszego warsztatu samochodowego:
+              </h1></span
+            >
+            <article>
+              <ul>
+                <a href="karoseria.html"><li>Karoseria</li></a>
+                <a href="silnik.html"> <li>Naprawy silnika</li></a>
+                <a href="zawieszenie.html"><li>Zawieszenie</li></a>
+                <a href="elektronika.html"><li>Elektronika samochodowa</li></a>
+                <a href="https://www.rk.com.pl" target="_blank"
+                  ><li>Sklep z częściami</li></a
+                >
+              </ul>
+            </article>
+          </div>
+
+          <div class="content1">
+            <span><h1 id="kontakt">Kontakt</h1></span>
+            <article>
+              <h3>Tel.XXX XXX XXX</h3>
+              Bursaki 19, 20-150 Lublin
+
+              <ul>
+                <li>Poniedziałek,07:00–18:00</li>
+                <li>Wtorek,07:00–18:00</li>
+                <li>Środa,07:00–18:00</li>
+                <li>Czwartek,07:00–18:00</li>
+                <li>Piątek,07:00–18:00</li>
+                <li>Sobota,07:00–12:00</li>
+                <li>Niedziela, Zamknięte</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="east">
+          <aside>
+            <img src="./img/1086283_print-trimmed-1.jpg" />
+          </aside>
+        </div>
+      </div>
+
+      <footer>
+        Strona wykonana przez amatora programistę &copy Wszelkie prawa
+        zastrzeżone
+      </footer>
+    </div>
+  </body>
+</html>
